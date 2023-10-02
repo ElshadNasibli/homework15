@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Əlavə et...">
+        <button id="createButton">Əlavə et</button>
+        <div class="column" id="openColumn" ondrop="drop(event, 'open')" ondragover="allowDrop(event)">
+            <h2>Open</h2>
+        </div>
+        <div class="column" id="inProgressColumn" ondrop="drop(event, 'inProgress')" ondragover="allowDrop(event)">
+            <h2>In Progress</h2>
+        </div>
+        <div class="column" id="completedColumn" ondrop="drop(event, 'completed')" ondragover="allowDrop(event)">
+            <h2>Completed</h2>
+        </div>
+    </div>
+</body>
+<script src="./src/js/app.js"></script>
+</html>
